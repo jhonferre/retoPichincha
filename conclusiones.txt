@@ -1,0 +1,13 @@
+Hallazgos y Conclusiones del Ejercicio:
+
+Selección de Productos:
+Se observó que algunos productos requerían la selección de detalles adicionales antes de poder agregarlos al carrito. Para simplificar el proceso en este ejercicio, se optó por utilizar productos que se podían agregar directamente desde la página de inicio con un solo clic en el botón “add to cart”.
+Proceso de Compra:
+El flujo de compra como invitado fue exitoso, permitiendo completar la compra sin necesidad de crear una cuenta.
+Los pasos incluyeron la adición de productos al carrito, la selección del método de pago y envío, y la confirmación de la orden.
+Detalles de Facturación:
+Se llenaron los formularios de detalles de facturación con valores aleatorios, lo que demostró que el sistema puede manejar entradas variadas sin problemas.
+Método de Envío y Pago:
+La selección del método de envío y la aceptación de los términos y condiciones se realizaron sin inconvenientes, lo que indica que el proceso es intuitivo y fluido.
+Confirmación de Pedido:
+La visualización de un mensaje de confirmación al finalizar la compra confirmó que el proceso se completó correctamente.

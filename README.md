@@ -1,39 +1,42 @@
-# Autor: Alejandro Polo Carvajal
-#### https://www.linkedin.com/in/alejandro-polo-carvajal-790b79186/
-##### ------------------------------------------------------------------------------------------------------
-# Curso Automation screenplay basic
-##### ------------------------------------------------------------------------------------------------------
+# retoPichincha
 
-#### Pagina automatizada: https://demoqa.com/
-#### Funciones automatizadas: ID CARD ELEMENTS
-#### Patron de diseño: Screenplay
-#### Framework: gherkin, cucumber, Junit, SerenityBDD, selenium
-#### Framework adicionales: librerias lombok, Faker, SonarLink, cucumber for java
-#### Lenguaje programacion: Java
-#### version gradle: gradle-8.4
-#### OPEN_JDK Version 17.0.9
-#### Driver: Edge version  120.0.2210.121
-#### ID: Intellij IDEA community Edition 2023.1
-##### ------------------------------------------------------------------------------------------------------
+Este proyecto realiza una prueba funcional automatizada (E2E) del flujo de compra en la página OpenCart.
 
-### Todos los casos pruebas cumplen con cada criterio solicitado
-### Todas las clases estan con auto-ident lines y reformat code
-### El codigo no tiene ningun Bug o codeSmell
-##### ------------------------------------------------------------------------------------------------------
-# PASOS PARA LA EJECUCIÓN
+## Requisitos Previos
 
-## Opcion 1
-### PASO A PASO PARA LA EJECUCIÓN POR CONSOLA
+- Java Development Kit (JDK) 8 o superior
+- Gradle
 
-### Comando para limpiar el proyecto y luego ejecuta TODOS los escenarios uno por uno
-#### ./gradlew clean test
+## Configuración del Proyecto
 
-### Comando para ejecutar por feature
-#### ./gradlew test --tests "co.com.screenplay.project.runners.RunnerOpenWeb"
-#### ./gradlew test --tests "co.com.screenplay.project.runners" --- TODO LOS FEATURES
+1. **Clonar el repositorio**:
+    ```sh
+    git clone https://github.com/jhonferre/retoPichincha.git
+    cd retoPichincha
+    ```
 
-### Comando para generar reporte despues que haya terminado un test (Por consola arrojara la ruta .html )
-#### ./gradlew reports
+2. **Configurar las dependencias**:
+    ```sh
+    ./gradlew clean build
+    ```
 
-### Comando para limpiar la carpeta Target (Reportes)
-#### ./gradlew clearReports
+## Ejecución de las Pruebas
+
+Para ejecutar las pruebas y generar el reporte agregado, utiliza el siguiente comando:
+```sh
+./gradlew clean test aggregate
+```
+
+## Funcionalidades Probadas
+
+- **Agregar dos productos al carrito**
+- **Visualizar el carrito**
+- **Completar el “Checkout” como invitado: “Guest Checkout”**
+- **Finalizar la compra hasta la confirmación: “Your order has been placed!”**
+
+## Reporte de Serenity
+
+Después de ejecutar las pruebas, puedes encontrar el reporte generado por Serenity en la siguiente ruta:
+```sh
+<project-root>/target/site/serenity/index.html
+```

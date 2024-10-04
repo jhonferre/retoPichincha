@@ -4,8 +4,9 @@ Este proyecto realiza una prueba funcional automatizada (E2E) del flujo de compr
 
 ## Requisitos Previos
 
-- Java Development Kit (JDK) 8 o superior
-- Gradle
+- Java Development Kit (JDK) 17 
+- Gradle 8.0 o superior
+- Navegador Edge
 
 ## Configuración del Proyecto
 

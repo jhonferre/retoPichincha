@@ -11,9 +11,6 @@ public class CheckoutPage extends PageObject {
     public static final Target ACCOUNT_CONTINUE_BUTTON = Target.the("button to continue with account creation")
             .locatedBy("//input[@id='button-account' and @value='Continue']");
 
-
-
-
     public static final Target FIRST_NAME_FIELD = Target.the("first name field")
             .locatedBy("//input[@id='input-payment-firstname']");
 

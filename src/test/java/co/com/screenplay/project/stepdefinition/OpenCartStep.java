@@ -38,7 +38,6 @@ public class OpenCartStep {
                 SelectShippingMethod.andContinue(),
                 SelectPaymentMethod.andContinue(),
                 ConfirmOrder.now());
-
     }
 
     @Then("a confirmation message should be displayed")

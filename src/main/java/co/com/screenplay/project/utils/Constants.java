@@ -4,5 +4,5 @@ public class Constants {
     private Constants() {
     }
 
-    public static final String WEB_URL = "environments.default.webdriver.base.url";
+    public static final String WEB_URL = "webdriver.base.url";
 }
